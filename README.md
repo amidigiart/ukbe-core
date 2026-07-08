@@ -8,7 +8,7 @@
 
 ## What this is
 
-UKBE Core implements the alignment-dynamics model studied in the REAI framework and the accompanying paper on ghost sensitivity peaks (see [p6-adler-ghost-peak](../p6-adler-ghost-peak)): N internal phase oscillators tracking a noisy estimate of human intent, with adaptive coupling weights governed by a coherence index, and a coupling floor calibrated from the phase-locking bifurcation — not guessed.
+UKBE Core implements the alignment-dynamics model studied in the REAI framework and the accompanying paper on ghost sensitivity peaks (see [p6-adler-ghost-peak](https://github.com/amidigiart/p6-adler-ghost-peak)): N internal phase oscillators tracking a noisy estimate of human intent, with adaptive coupling weights governed by a coherence index, and a coupling floor calibrated from the phase-locking bifurcation — not guessed.
 
 Around the engine, a verifiable-trust stack:
 
