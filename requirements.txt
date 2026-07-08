@@ -1,0 +1,11 @@
+numpy
+fastapi
+uvicorn
+httpx
+cryptography
+blake3
+pqcrypto
+base58
+# pytezos - NECESARA doar pentru tezos_anchor.py, instaleaza separat:
+# pip install pytezos
+# (nu e inclusa implicit - dependinta grea, compilare nativa)

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ukbe-core"
+version = "0.10.0"
+description = "UKBE Core - Resonance Engine, Notary, CASP Signing"
+license = {text = "Apache-2.0"}
+authors = [{name = "Mihai Roșca", email = "mihairosca1982@gmail.com"}]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "cryptography",
+    "blake3",
+    "pqcrypto",
+    "base58",
+    "fastapi",
+    "uvicorn",
+]
+
+[tool.setuptools.packages.find]
+include = ["ukbe_core*"]
