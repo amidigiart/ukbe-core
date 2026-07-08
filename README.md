@@ -61,7 +61,7 @@ Documented imperfection over simulated perfection. The test suite includes the u
 
 ## Related
 
-- **Paper + reproduction:** [p6-adler-ghost-peak](https://github.com/USERNAME/p6-adler-ghost-peak) — the ghost-peak phenomenon, the Adler mechanism, and the calibration rule implemented here in `calibration.py`.
+- **Paper + reproduction:** [p6-adler-ghost-peak](https://github.com/amidigiart/p6-adler-ghost-peak) — the ghost-peak phenomenon, the Adler mechanism, and the calibration rule implemented here in `calibration.py`.
 - **REAI framework document** (v0.7.2) — the broader theoretical context (publication in preparation).
 
 ## License
