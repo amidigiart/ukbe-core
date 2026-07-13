@@ -59,6 +59,10 @@ for z in your_human_proxy_stream:
 
 Documented imperfection over simulated perfection. The test suite includes the unhappy paths: forged signatures that must fail, fabricated data that must be caught, coherent-but-wrong states scored as *more* dangerous than chaotic ones. The development record — including bugs found in our own formulas and externally supplied analyses rejected by measurement — is part of the project, not cleaned out of it.
 
+## Methodology & lineage
+
+This engine implements the **REAI** method. The methodology note, the verified self-correction of its 'universal equation' section, and the N-model coherence formula (WEAC) are documented in the value repository **[amidor-engine](https://github.com/amidigiart/amidor-engine)** (AGPL-3.0 / commercial). The reproduced scientific result behind it is open: [doi:10.5281/zenodo.21269201](https://doi.org/10.5281/zenodo.21269201) · [p6-adler-ghost-peak](https://github.com/amidigiart/p6-adler-ghost-peak).
+
 ## Related
 
 - **Paper + reproduction:** [p6-adler-ghost-peak](https://github.com/amidigiart/p6-adler-ghost-peak) — the ghost-peak phenomenon, the Adler mechanism, and the calibration rule implemented here in `calibration.py`.
