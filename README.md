@@ -92,6 +92,10 @@ under an **AGPL-3.0 / commercial dual license**:
   B2B arbitration (human-in-the-loop by construction);
 - **Micro-grid synchronization tools** — the coupling-margin and recovery-time
   calculators applying the paper's calibration rule to grid stability;
+- **ScaleEngine** — the O(N) mean-field production engine, a drop-in for this
+  repo's UKBEEngine, tested for exact numerical equivalence with it and
+  benchmarked in-suite (measured: 36× at N=1,000, 349× at N=5,000, runs at
+  N=100,000);
 - **the live REAI state monitor**, scam-shield, alerting, i18n, and the full
   deployable product stack (AmiDor).
 
