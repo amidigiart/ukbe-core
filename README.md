@@ -68,6 +68,52 @@ This engine implements the **REAI** method. The methodology note, the verified s
 - **Paper + reproduction:** [p6-adler-ghost-peak](https://github.com/amidigiart/p6-adler-ghost-peak) — the ghost-peak phenomenon, the Adler mechanism, and the calibration rule implemented here in `calibration.py`.
 - **REAI framework document** (v0.7.2) — the broader theoretical context (publication in preparation).
 
-## License
+## ⚖️ Open core & commercial licensing
 
-[Apache-2.0](LICENSE) © 2023–2026 Mihai Roșca. Open core: this engine and stack are free to use, modify, and build on; commercial products and educational content built on top of it by the author remain separate works.
+**ukbe-core** is released under the permissive **[Apache-2.0](LICENSE)** license
+© 2023–2026 Mihai Roșca. The foundational physics and alignment engine —
+Kuramoto + Kalman + adaptive α/β with the derived β_min floor — is free forever:
+use it, modify it, build on it, for research, education, or anything else.
+The mathematics behind it is open and citable:
+[doi:10.5281/zenodo.21269201](https://doi.org/10.5281/zenodo.21269201).
+
+### What this repository deliberately does NOT contain
+
+The **applied layer** — where the engine becomes products — is maintained in a
+separate repository, **[amidor-engine](https://github.com/amidigiart/amidor-engine)**,
+under an **AGPL-3.0 / commercial dual license**:
+
+- **WEAC** (Weighted Ensemble Agreement Coherence) — the N-model
+  confidence-and-abstention formula, with per-model reliability weighting and
+  the hard numeric-conflict guard;
+- **N-model anti-confabulation engines** (`DualEngine`, `EnsembleEngine`) with
+  the REAI register gate wired into a production loop;
+- **Arbitration Support** — the agreement/uncertainty meter for AI-assisted
+  B2B arbitration (human-in-the-loop by construction);
+- **Micro-grid synchronization tools** — the coupling-margin and recovery-time
+  calculators applying the paper's calibration rule to grid stability;
+- **the live REAI state monitor**, scam-shield, alerting, i18n, and the full
+  deployable product stack (AmiDor).
+
+None of that is a hidden switch inside this repo — it is genuinely separate
+work, and this split is the business model, stated plainly.
+
+### How the dual license works (read this before building a product)
+
+- Building something **open-source**? AGPL lets you use amidor-engine freely —
+  provided your product is open under compatible terms.
+- Building **closed-source SaaS, enterprise systems, or commercial products**
+  on the applied layer? AGPL's network clause requires you to open your entire
+  service — or obtain a **commercial license** instead. That is the deal:
+  open stays free, closed pays.
+
+For commercial licensing or enterprise implementation of `amidor-engine`, see
+its [COMMERCIAL.md](https://github.com/amidigiart/amidor-engine/blob/main/COMMERCIAL.md)
+and contact **contact@kinderagi.com**.
+
+*Honest engineering note: this base engine is a working reference
+implementation with its limits documented above and in the paper — including
+the fact that phase-lock is **conditional** (K > Δω, the Adler/SNIC threshold);
+anyone promising "unconditional" synchronization is contradicting the physics.
+The commercial value of the vault is real, shipped code — not artificial
+limitations planted here.*
