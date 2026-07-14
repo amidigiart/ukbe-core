@@ -112,8 +112,11 @@ its [COMMERCIAL.md](https://github.com/amidigiart/amidor-engine/blob/main/COMMER
 and contact **contact@kinderagi.com**.
 
 *Honest engineering note: this base engine is a working reference
-implementation with its limits documented above and in the paper — including
-the fact that phase-lock is **conditional** (K > Δω, the Adler/SNIC threshold);
-anyone promising "unconditional" synchronization is contradicting the physics.
-The commercial value of the vault is real, shipped code — not artificial
-limitations planted here.*
+implementation. The mathematics does not break at scale (measured: N=1000,
+RSI healthy), but the internal coupling here is the pedagogically-clear
+pairwise **O(N²)** form, so large-N runs get slow — a performance property,
+not a mathematical wall. The equivalent O(N) mean-field form is a standard
+identity, not a secret. Also: phase-lock is **conditional** (K > Δω, the
+Adler/SNIC threshold) per our own paper — anyone promising "unconditional"
+synchronization is contradicting the physics. The commercial value of the
+vault is real, shipped product code — not artificial limitations planted here.*
